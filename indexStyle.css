@@ -51,7 +51,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 100px;
     background-color: var(--creme);
     padding: 25px;
 }
