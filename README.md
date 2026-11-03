@@ -1,4 +1,4 @@
-Goedeavond dames en heren
+Goedenavond dames en heren
 
 
 https://timvveen.github.io/Pokewatch/
