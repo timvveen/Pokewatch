@@ -36,7 +36,9 @@ a {
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--display);
     font-weight: 400;
     line-height: .9;
@@ -44,22 +46,6 @@ h1, h2, h3 {
 
 
 /* HEADER */
-
-/* LOGO */
-
-.header-logo {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.header-logo img {
-    display: block;
-    width: 130px;
-    height: auto;
-    max-height: 55px;
-    object-fit: contain;
-}
 
 .site-header {
     min-height: 76px;
@@ -121,9 +107,9 @@ h1, h2, h3 {
 }
 
 
-/* INTRODUCTIE */
+/* HERO / INTRODUCTIE */
 
-.guide-introduction {
+.guide-hero {
     position: relative;
     min-height: 430px;
     padding: 60px 5% 90px;
@@ -137,7 +123,7 @@ h1, h2, h3 {
 }
 
 
-.guide-introduction-copy {
+.guide-hero-copy {
     max-width: 850px;
 }
 
@@ -149,13 +135,13 @@ h1, h2, h3 {
 }
 
 
-.guide-introduction h1 {
+.guide-hero h1 {
     margin: 15px 0;
     font-size: clamp(4rem, 8vw, 7rem);
 }
 
 
-.introduction-intro {
+.hero-intro {
     max-width: 650px;
     margin: 20px auto;
     font-weight: 600;
@@ -179,9 +165,9 @@ h1, h2, h3 {
 }
 
 
-/* INTRODUCTIE ONDERBALK */
+/* HERO ONDERBALK */
 
-.introduction-bottom {
+.hero-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -226,7 +212,7 @@ h1, h2, h3 {
 }
 
 
-/* STAPPEN */
+/* STAPPEN KAARTEN */
 
 .steps-grid {
     max-width: 1150px;
@@ -261,7 +247,7 @@ h1, h2, h3 {
 /* AFSLUITING */
 
 .guide-finish {
-    margin: 20px 5% 75px;
+    margin: 0px;
     padding: 50px 25px;
     background: var(--wine);
     color: var(--cream);
@@ -316,7 +302,7 @@ h1, h2, h3 {
 }
 
 
-/* TABLET */
+/* MOBIEL */
 
 @media (max-width: 760px) {
 
@@ -333,12 +319,12 @@ h1, h2, h3 {
     }
 
 
-    .guide-introduction {
+    .guide-hero {
         padding: 45px 22px 75px;
     }
 
 
-    .guide-introduction h1 {
+    .guide-hero h1 {
         font-size: clamp(3.8rem, 14vw, 6rem);
     }
 
@@ -371,17 +357,13 @@ h1, h2, h3 {
 }
 
 
-/* MOBIEL */
+/* KLEINE MOBIELE SCHERMEN */
 
 @media (max-width: 480px) {
 
     .main-nav a {
         font-size: .58rem;
     }
-    
-    .header-logo img {
-    width: 110px;
-}
 
 
     .header-cta {
@@ -389,19 +371,19 @@ h1, h2, h3 {
     }
 
 
-    .introduction-bottom {
+    .hero-bottom {
         justify-content: flex-start;
         overflow: hidden;
         white-space: nowrap;
     }
 
 
-    .guide-introduction h1 {
+    .guide-hero h1 {
         font-size: 3.5rem;
     }
 
 
-    .guide-introduction {
+    .guide-hero {
         padding: 40px 20px 75px;
     }
 
@@ -425,9 +407,19 @@ h1, h2, h3 {
         font-size: 2.5rem;
     }
 
-
     .site-footer nav {
         width: 100%;
+    }
+
+}
+
+
+/* MINDER ANIMATIE */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
     }
 
 }
