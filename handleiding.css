@@ -45,6 +45,22 @@ h1, h2, h3 {
 
 /* HEADER */
 
+/* LOGO */
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-logo img {
+    display: block;
+    width: 130px;
+    height: auto;
+    max-height: 55px;
+    object-fit: contain;
+}
+
 .site-header {
     min-height: 76px;
     padding: 14px 5%;
@@ -362,6 +378,10 @@ h1, h2, h3 {
     .main-nav a {
         font-size: .58rem;
     }
+    
+    .header-logo img {
+    width: 110px;
+}
 
 
     .header-cta {
