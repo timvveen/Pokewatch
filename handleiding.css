@@ -105,9 +105,9 @@ h1, h2, h3 {
 }
 
 
-/* HERO / INTRODUCTIE */
+/* INTRODUCTIE */
 
-.guide-hero {
+.guide-introduction {
     position: relative;
     min-height: 430px;
     padding: 60px 5% 90px;
@@ -121,7 +121,7 @@ h1, h2, h3 {
 }
 
 
-.guide-hero-copy {
+.guide-introduction-copy {
     max-width: 850px;
 }
 
@@ -133,13 +133,13 @@ h1, h2, h3 {
 }
 
 
-.guide-hero h1 {
+.guide-introduction h1 {
     margin: 15px 0;
     font-size: clamp(4rem, 8vw, 7rem);
 }
 
 
-.hero-intro {
+.introduction-intro {
     max-width: 650px;
     margin: 20px auto;
     font-weight: 600;
@@ -163,9 +163,9 @@ h1, h2, h3 {
 }
 
 
-/* HERO ONDERBALK */
+/* INTRODUCTIE ONDERBALK */
 
-.hero-bottom {
+.introduction-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -210,7 +210,7 @@ h1, h2, h3 {
 }
 
 
-/* STAPPEN KAARTEN */
+/* STAPPEN */
 
 .steps-grid {
     max-width: 1150px;
@@ -300,7 +300,7 @@ h1, h2, h3 {
 }
 
 
-/* MOBIEL */
+/* TABLET */
 
 @media (max-width: 760px) {
 
@@ -317,12 +317,12 @@ h1, h2, h3 {
     }
 
 
-    .guide-hero {
+    .guide-introduction {
         padding: 45px 22px 75px;
     }
 
 
-    .guide-hero h1 {
+    .guide-introduction h1 {
         font-size: clamp(3.8rem, 14vw, 6rem);
     }
 
@@ -355,7 +355,7 @@ h1, h2, h3 {
 }
 
 
-/* KLEINE MOBIELE SCHERMEN */
+/* MOBIEL */
 
 @media (max-width: 480px) {
 
@@ -369,19 +369,19 @@ h1, h2, h3 {
     }
 
 
-    .hero-bottom {
+    .introduction-bottom {
         justify-content: flex-start;
         overflow: hidden;
         white-space: nowrap;
     }
 
 
-    .guide-hero h1 {
+    .guide-introduction h1 {
         font-size: 3.5rem;
     }
 
 
-    .guide-hero {
+    .guide-introduction {
         padding: 40px 20px 75px;
     }
 
@@ -404,19 +404,10 @@ h1, h2, h3 {
     .guide-finish h2 {
         font-size: 2.5rem;
     }
+
+
     .site-footer nav {
         width: 100%;
-    }
-
-}
-
-
-/* MINDER ANIMATIE */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
     }
 
 }
