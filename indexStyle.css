@@ -58,8 +58,8 @@ img {
     transform: rotate(-5deg);
 }
 
-.brand-mark {
-    font: 2rem var(--display);
+header a img {
+    max-width: 10vw;
 }
 
 .brand-sub {
