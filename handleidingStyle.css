@@ -406,14 +406,3 @@ header a img {
     }
 
 }
-
-
-/* MINDER ANIMATIE */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
-}
