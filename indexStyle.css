@@ -99,14 +99,14 @@ header a img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 0;
     overflow: hidden;
     background: var(--red);
     color: var(--cream);
 }
 
 .hero-copy {
-    width: 55%;
+    width: 50%;
     max-width: 700px;
     position: relative;
     z-index: 1;
@@ -137,9 +137,10 @@ h3 {
 }
 
 .hero-image {
-    width: 45%;
-    max-width: 600px;
+    width: 44%;
+    max-width: 580px;
     height: auto;
+    margin-right: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,12 +148,12 @@ h3 {
 
 .hero-image img {
     width: 100%;
-    max-width: 600px;
+    max-width: 580px;
     height: auto;
     max-height: 480px;
     object-fit: contain;
     padding: 0;
-    transform: rotate(-4deg);
+    transform: none;
     filter: drop-shadow(0 20px 18px rgba(40, 31, 27, .3));
 }
 
@@ -360,7 +361,7 @@ h3 {
         max-width: 480px;
         height: auto;
         align-self: center;
-        margin-top: 15px;
+        margin: 20px auto 0;
     }
 
     .hero-image img {
