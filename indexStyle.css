@@ -1,3 +1,4 @@
+
 :root {
     --red: #df4036;
     --red-dark: #a92c27;
@@ -87,7 +88,6 @@ header a img {
     background: var(--cream);
     color: var(--red-dark);
 }
-
 
 
 /* HERO */
@@ -180,7 +180,6 @@ h3 {
     color: var(--red-dark);
     font: 1rem var(--display);
 }
-
 
 
 /* PRODUCTEN */
@@ -294,7 +293,7 @@ h3 {
     font-size: .9rem;
 }
 
-.story>img {
+.story > img {
     height: 320px;
 }
 
@@ -342,7 +341,6 @@ h3 {
         gap: 10px;
     }
 
-    
     .hero {
         padding: 45px 22px 55px;
         flex-direction: column;
@@ -391,6 +389,9 @@ h3 {
     }
 }
 
+
+/* KLEINE MOBIELE SCHERMEN */
+
 @media (max-width: 480px) {
 
     .main-nav a {
@@ -401,7 +402,6 @@ h3 {
         font-size: .58rem;
     }
 
-    
     .hero-image {
         width: 100%;
         max-width: 340px;
@@ -426,7 +426,11 @@ h3 {
     }
 }
 
+
+/* MINDER ANIMATIE */
+
 @media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
