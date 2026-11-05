@@ -89,22 +89,26 @@ header a img {
 }
 
 
+
 /* HERO */
 
 .hero {
     position: relative;
-    min-height: 480px;
-    padding: 65px 5% 90px;
+    min-height: 570px;
+    padding: 55px 5% 75px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 30px;
     overflow: hidden;
     background: var(--red);
     color: var(--cream);
 }
 
 .hero-copy {
-    max-width: 650px;
+    width: 55%;
+    max-width: 700px;
+    position: relative;
     z-index: 1;
 }
 
@@ -124,7 +128,7 @@ h3 {
 
 .hero h1 {
     margin: 15px 0;
-    font-size: clamp(4rem, 8vw, 7.5rem);
+    font-size: clamp(4rem, 7vw, 7.5rem);
 }
 
 .hero-intro {
@@ -133,15 +137,23 @@ h3 {
 }
 
 .hero-image {
-    width: 38%;
-    height: 300px;
-    transform: rotate(4deg);
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-image img {
-    max-height: 550px;
-    width: auto;
-    padding-bottom: 50px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 480px;
+    object-fit: contain;
+    padding: 0;
+    transform: rotate(-4deg);
+    filter: drop-shadow(0 20px 18px rgba(40, 31, 27, .3));
 }
 
 .button {
@@ -168,6 +180,7 @@ h3 {
     color: var(--red-dark);
     font: 1rem var(--display);
 }
+
 
 
 /* PRODUCTEN */
@@ -329,10 +342,15 @@ h3 {
         gap: 10px;
     }
 
+    
     .hero {
-        padding: 45px 22px 75px;
+        padding: 45px 22px 55px;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .hero-copy {
+        width: 100%;
     }
 
     .hero h1 {
@@ -340,14 +358,15 @@ h3 {
     }
 
     .hero-image {
-        width: 50%;
-        height: 220px;
-        align-self: flex-end;
-        flex-direction: column;
+        width: 85%;
+        max-width: 480px;
+        height: auto;
+        align-self: center;
+        margin-top: 15px;
     }
 
     .hero-image img {
-        max-height: 250px;
+        max-height: 350px;
     }
 
     .product-grid {
@@ -380,6 +399,16 @@ h3 {
 
     .header-cta {
         font-size: .58rem;
+    }
+
+    
+    .hero-image {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .hero-image img {
+        max-height: 280px;
     }
 
     .hero-bottom {
